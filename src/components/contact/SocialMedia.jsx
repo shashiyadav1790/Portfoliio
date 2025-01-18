@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { images } from "../../images/images.js";
 const SocialMedia = () => {
   return (
@@ -12,7 +12,7 @@ const SocialMedia = () => {
       <li>
         <a
           className="social-media-a"
-          href="https://www.linkedin.com/in/ranjana-devi-58976327b"
+          href="https://www.linkedin.com/in/shashi-yadav-a380292a0"
         >
           {" "}
           <img
@@ -26,7 +26,7 @@ const SocialMedia = () => {
       <li>
         <a
           className="social-media-a"
-          href="https://www.youtube.com/@original_panda_coder"
+          href="https://www.youtube.com"
         >
           <img
             src={images.youtube}
@@ -39,7 +39,7 @@ const SocialMedia = () => {
       <li>
         <a
           className="social-media-a"
-          href="https://www.instagram.com/_im_ranjana"
+          href="https://www.instagram.com/shashisurya302"
         >
           <img
             src={images.insta}
@@ -49,36 +49,12 @@ const SocialMedia = () => {
           <p className="mt-2">Instagram</p>
         </a>
       </li>
+      
+    
       <li>
         <a
           className="social-media-a"
-          href="https://leetcode.com/u/originalpandacoder/"
-        >
-          <img
-            src={images.lc}
-            className="social-media-icon"
-            alt="Leetcode"
-          />
-          <p className="mt-2">Leetcode</p>
-        </a>
-      </li>
-      <li>
-        <a
-          className="social-media-a"
-          href="https://www.geeksforgeeks.org/user/0203ranjw9g9/"
-        >
-          <img
-            src={images.gfg}
-            className="social-media-icon"
-            alt="Geeks for Geeks"
-          />
-          <p className="mt-2">GeeksforGeeks</p>
-        </a>
-      </li>
-      <li>
-        <a
-          className="social-media-a"
-          href="https://github.com/officialRanjanaDevi"
+          href="https://github.com/shashiyadav1790"
         >
           <img
             src={images.git}

@@ -1,5 +1,4 @@
 
-import React from "react";
 import FavoriteBorderRoundedIcon from "@mui/icons-material/FavoriteBorderRounded";
 import "./Contact.css";
 import SocialMedia from "./SocialMedia";

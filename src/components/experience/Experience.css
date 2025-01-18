@@ -10,3 +10,6 @@
 .view{
     @apply hover:text-sky-500 border-2 border-gray-500 hover:border-sky-500 p-2 rounded-md 
 }
+.logo{
+    border-radius: 30%;
+}

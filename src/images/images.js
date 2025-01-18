@@ -1,4 +1,4 @@
-import my from "./my.jpg";
+
 import HTML from "./HTML.png";
 import CSS from "./CSS.png"
 import js from "./js.png"
@@ -30,8 +30,15 @@ import weather from "./weather.png"
 import bike from "./bike.png"
 import about from "./about.jpg"
 import quiz from "./quiz.png"
+import sk from "./sk.jpg";
+import aisect from "./aisect.png";
+import kbss from "./kbss.png";
+import nsa from "./nsa.png";
 export const images = {
-  my,
+  sk,
+  aisect,
+  kbss,
+  nsa,
   about,
   HTML,
   CSS,
@@ -60,5 +67,5 @@ export const images = {
   todo,
   weather,
   wanderlust,
-  bike
+  bike,
 };

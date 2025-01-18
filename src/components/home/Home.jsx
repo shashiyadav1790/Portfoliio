@@ -1,5 +1,5 @@
-import React from "react";
-import Button from "@mui/material/Button";
+
+
 import { images } from "../../images/images.js";
 import "./Home.css";
 import { motion } from 'framer-motion';
@@ -23,12 +23,12 @@ const Home = () => {
       >
         <p className="tracking-widest text-slate-400 text-2xl">I'm a</p>
         <h4 className=" abril-fatface-regular mainHeading">
-          <spam className="software"> {text}<Cursor cursorColor="#aaa" /></spam>
-         <br/>DEVELOPER<spam className="software">.</spam>
+          <span className="software"> {text}<Cursor cursorColor="#aaa" /></span>
+         <br/>DEVELOPER<span className="software">.</span>
           
         </h4>
         <button sx={{ color: "white" }} className="linkedin-btn">
-          <a href="https://www.linkedin.com/in/ranjana-devi-58976327b">
+          <a href="https://www.linkedin.com/in/shashi-yadav-a380292a0">
             Linked In
           </a>
         </button>
@@ -41,7 +41,7 @@ const Home = () => {
       >
         <div className="imgDiv">
           <img
-            src={images.my}
+            src={images.sk}
             className="rounded-full shadow-inner shadow-slate-600"
             alt="Profile"
           />

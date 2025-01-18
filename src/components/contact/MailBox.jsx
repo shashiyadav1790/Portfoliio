@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const MailBox = () => {
@@ -19,7 +19,7 @@ const MailBox = () => {
       from_name: name,
       from_email: mail,
       message: message,
-      to_name: "Ranjana",
+      to_name: "Shashi",
     };
 
     emailjs.send(Service_ID, Template_ID, templateParams, Public_Key).then(

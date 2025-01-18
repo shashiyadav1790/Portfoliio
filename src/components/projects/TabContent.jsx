@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Project.css";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import { images } from "../../images/images.js";
@@ -15,7 +15,7 @@ const TabContent = ({ value }) => {
       description:
         "It is a static site developed using react and data is fetched by Weather API.Responsive weather forecast site that provides real-time data like: Temperature ,Humidity , Wind speed ,Cloud coverage, Feels like temperature, Date, Time, City & Country. ",
       livelink: "https://weather-forecast-j423.onrender.com",
-      imglink:images.weather,
+      imglink: images.weather,
     },
     {
       key: "two",
@@ -27,17 +27,15 @@ const TabContent = ({ value }) => {
       livelink: "https://to-do-app-if8g.onrender.com",
       imglink: images.todo,
     },
- 
-   
     {
       key: "three",
       type: "Full Stack",
       title: "Bike Rental Website",
-      stack: ["React Js", "Node Js", "Express Js", "Mongo DB", "Bootstrap","Tailwind Css","Material UI"],
+      stack: ["React Js", "Node Js", "Express Js", "Mongo DB", "Bootstrap", "Tailwind Css", "Material UI"],
       description:
         "Functional Bike rental service with admin dashboard and user-friendly Interface with integrated Payment Gateway. Client can browse and book bikes after being registered also can contact to admin.",
       livelink: "https://rent-motors-frontend.vercel.app/",
-      imglink: images.bike ,
+      imglink: images.bike,
     },
     {
       key: "four",
@@ -63,39 +61,34 @@ const TabContent = ({ value }) => {
       title: "Quiz App",
       stack: ["React", "NodeJs", "Tailwind CSS", "Javascript"],
       description:
-        "It is a static site developed using react and data is fetched by Qiuz API.Responsive site with additional counter of 10 minutes and score display at the end of 10 question one per page.",
+        "It is a static site developed using react and data is fetched by Quiz API. Responsive site with an additional counter of 10 minutes and score display at the end of 10 questions, one per page.",
       livelink: "https://mc-qgame.vercel.app",
-      imglink:images.quiz,
+      imglink: images.quiz,
     },
   ];
 
   const filteredProjects = projects.filter((project) => project.type === value);
 
   return (
-    <div   >
-      {filteredProjects.map((project, index) => (
+    <div>
+      {filteredProjects.map((project) => (
         <motion.div
-        variants={fadeIn("up", 0.1)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.8 }} 
-          key={index}
-          className={`card-div  ${
-            index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-          }`}
+          variants={fadeIn("up", 0.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.8 }} 
+          key={project.key} // Use project.key here
+          className={`card-div  ${project.key % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
         >
           <div className=" w-3/4  sm:w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/4">
             <h2 className="text-xl text-left font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-indigo-900">
-              {index + 1}. {project.title}
+              {filteredProjects.indexOf(project) + 1}. {project.title}
             </h2>
             <p className="card-text text-gray-500">{project.description}</p>
-            <h2 className="my-2 card-text text-gray-500">
-              Technology Stack used :-
-            </h2>
+            <h2 className="my-2 card-text text-gray-500">Technology Stack used :-</h2>
             <ul>
-              {" "}
               {project.stack.map((tech, index) => (
-                <li className="card-text text-gray-500 my-0.5">
+                <li key={index} className="card-text text-gray-500 my-0.5">
                   <KeyboardArrowRightRoundedIcon className="icon"></KeyboardArrowRightRoundedIcon>{" "}
                   &nbsp;{tech}
                 </li>
@@ -106,8 +99,8 @@ const TabContent = ({ value }) => {
             </button>
           </div>
 
-          <div  className=" sm:w-3/5  md:w-1/3 lg:1/3 xl:w-1/4 h-full imgBox">
-            <img src={`${project.imglink}`} alt="alt" className="img h-full w-full" />
+          <div className="sm:w-3/5 md:w-1/3 lg:1/3 xl:w-1/4 h-full imgBox">
+            <img src={project.imglink} alt="alt" className="img h-full w-full" />
           </div>
         </motion.div>
       ))}

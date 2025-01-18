@@ -152,7 +152,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="View GitHub account!">
               <Button className="git-btn">
-                <a href="https://github.com/officialRanjanaDevi" className="text-white">GitHub</a>
+                <a href="https://github.com/shashiyadav1790" className="text-white">GitHub</a>
               </Button>
             </Tooltip>
           </Box>
