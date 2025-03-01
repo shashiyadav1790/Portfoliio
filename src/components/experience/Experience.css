@@ -1,0 +1,15 @@
+.container{
+    @apply mt-32 text-center min-h-screen
+}
+.heading{
+    @apply mb-8 font-bold text-2xl
+}
+.card-box{
+    @apply flex flex-wrap justify-center  my-8
+}
+.view{
+    @apply hover:text-sky-500 border-2 border-gray-500 hover:border-sky-500 p-2 rounded-md 
+}
+.logo{
+    border-radius: 30%;
+}

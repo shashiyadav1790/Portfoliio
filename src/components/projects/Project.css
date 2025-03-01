@@ -1,0 +1,20 @@
+.imgBox{
+    @apply outline outline-4 outline-offset-2  outline-sky-400 rounded-sm transition-transform duration-1000 ease-in-out hover:scale-110 h-3/5 w-3/5
+    
+}
+.img{
+    @apply rounded-md  shadow-black -translate-y-3.5 -translate-x-3.5
+}
+.live-btn{
+    @apply w-40  mt-6 h-11 font-bold transition-transform duration-700 ease-in-out hover:scale-110 hover:from-sky-500 
+    hover:to-violet-900 bg-gradient-to-r from-sky-500 to-violet-900 px-4 py-2 rounded-md 
+}
+.card-div{
+   @apply border-none xl:p-8 lg:p-4 md:p-4 sm:p-8  mb-12  flex flex-wrap-reverse justify-evenly
+}
+.card-text{
+    @apply  text-justify  text-sm tracking-wider leading-5
+}
+.icon{
+    @apply text-slate-500 rounded-md border-2 border-slate-500
+}

@@ -1,0 +1,9 @@
+.service-card{
+   @apply mt-8 h-5/6 md:w-1/3 lg:w-1/4 md:mx-2 lg:mx-4  border-4 border-x-sky-500  border-y-indigo-800  rounded-md p-4 transition-transform duration-1000 ease-in-out hover:scale-110
+}
+.card-text{
+    @apply text-gray-400 text-justify w-full
+}
+.card-grid{
+    @apply flex flex-wrap justify-around
+}

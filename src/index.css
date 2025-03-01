@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  min-height:100vh;
+  
+  @apply bg-gradient-to-r bg-gradient-to-tr	 from-slate-100  from-20% via-slate-50 via-40% via-white via-50% via-slate-50 via-75% to-slate-100 text-black 
+}
+.dark{
+  @apply bg-gradient-to-r bg-gradient-to-tr	 from-slate-950  from-20% via-slate-800 via-40% via-slate-800 via-50% via-slate-900 via-75% to-slate-950 text-white
+}
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.balsamiq-sans-regular {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.balsamiq-sans-bold {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.balsamiq-sans-regular-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.balsamiq-sans-bold-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
